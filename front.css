@@ -1,0 +1,496 @@
+/*set the css feature for body*/
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
+    color: black;  
+    }
+/*loarder style*/
+#loader{
+    background: #000 url(photos/giphy.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    }
+/*set style for div which have id Nav_bar*/
+#Nav_bar{
+   overflow: hidden;
+   display: flex;
+   justify-content: space-evenly; /* Spread items across the container */
+   align-items: center; /* center items */
+   padding: 40px; /* helps to get better space  */
+   color: black; 
+    }
+/*set some style for logo*/
+#Nav_bar i {
+    margin-right: 10px; /* margin from right */
+    font-size: 2rem; /* set font size */
+    text-shadow: 2px 2px 4px rgb(112, 109, 102); 
+    }
+/*set some style for link in navbar*/
+a.a {
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust font size */
+    cursor: pointer;
+    color: black;
+    text-shadow: 2px 2px 4px rgb(112, 109, 102);
+    transition: background-color 0.5s linear, border-radius 0.5s linear, font-size 0.5s linear;
+    }
+/* Dropdown container */
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+    background-color: white;
+    }
+    
+    /* Show the dropdown menu on hover */
+    #Blog:hover .dropdown-content {
+    display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+/*set some style for image tag which has id img*/
+#img {
+    width: 100%;
+    height: auto; /* helps to maintain aspect ratio */
+    object-fit: cover;
+    transition-delay: 2s;
+    transform: rotateY(10deg); /*rotate y axis in 10deg */
+    border-radius: 31px;
+    background: linear-gradient(315deg, #f0f0f0, #cacaca);
+    box-shadow:  -24px -24px 48px #a6a6a6,24px 24px 48px #ffffff; 
+    }
+/*set some style for content part*/
+#content_part{
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    }
+/*set some style for content part's h2 tag*/
+h2{
+    font-family: sans-serif;
+    text-align: left;
+    margin-top: 10%;
+    font-size: 25px;
+    font-weight: 200;
+    position: relative;
+    text-shadow: 2px 2px 4px rgb(112, 109, 102);
+    }
+/*set styles for div which have class divs*/
+#div1{
+    height: 200px;
+    width: 20%;
+    padding: 50px;
+    background-image:url(photos/sunset.jpg) ;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    box-shadow:  -26px -26px 18px #a8a8a8, 26px 26px 18px #ffffff; 
+    }
+#div2{
+    height: 200px;
+    width: 20%;
+    padding: 50px;
+    background-image: url(photos/Northern\ Lights.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; 
+    box-shadow:  -26px -26px 18px #a8a8a8,
+             26px 26px 18px #ffffff;
+   
+    }
+#div3{
+    height: 200px;
+    width: 20%;
+    padding: 50px;
+    background-image:url(photos/Reinebringen\,\ Lofoten\ Islands.jpg) ;
+    background-size: cover;
+    margin-top: 5%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin:30px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; 
+    box-shadow:  -26px -26px 18px #a8a8a8,
+             26px 26px 18px #ffffff;
+    }
+#div4{
+    height: 200px;
+    width: 20%;
+    padding: 50px;
+    background-image:url(photos/hauklandBeach.jpg) ;
+    background-size: cover;
+    margin-top: 5%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    box-shadow:  -26px -26px 18px #a8a8a8,
+             26px 26px 18px #ffffff;  
+    
+    }
+#div5{
+    height: 200px;
+    width: 20%;
+    padding: 50px;
+    background-image:url(photos/stadium.jpg) ;
+    background-size: cover;
+    margin-top: 5%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; 
+    box-shadow:  -26px -26px 18px #a8a8a8,
+             26px 26px 18px #ffffff;
+    }
+/*#content_p{
+    text-align: center;
+}*/
+.divs{
+    opacity: 0.5;  
+    }
+
+/*figcaption style*/
+figcaption{
+    font-weight: 200;
+    font-size: larger;
+    background-color: #cacaca;
+    opacity: 1;
+    margin-top: 68%;
+    
+    }
+/*set some style for feedback tag  with id feedback*/
+#feedback {
+    padding: 20px; /* Add padding for better spacing */
+    font-size: 1rem; /* Adjust font size */
+    text-align: center;  
+    }
+/*set some style for form tag*/
+form{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: #fff;  
+    }
+/*set some style for lable tag*/
+label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    }
+/*set some style for p tag which have id p2*/
+#p2{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: #fff;
+    } 
+/*set some style for submit button with id button*/
+#button{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(250, 100, 0, 0.8);
+    color: #fff;
+    cursor: pointer;
+    
+    }
+#feedback1{
+    padding: 20px 10px; /*increase the size of top and bottom, left and right respectively*/
+    }
+/*set some style for footer section*/
+#footer {
+    background-color: beige;
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center;
+    font-size: 1.5rem; /* Adjust font size */
+}
+/*set some style for input with id feedback1*/
+
+/*style by using some hover in nav link*/
+a.a:hover{
+    background-color: gray;
+    border-radius: 8px;
+    font-size: 2.5rem; 
+}
+/*#p1:hover{
+    /*font-size: 2.5rem; /*increses the font size when i mouse over this*/
+    /*color: white;
+    cursor: pointer;
+    
+   }*/
+
+.divs:hover{
+    opacity: 1;
+    cursor: pointer;
+    
+}
+.divs figcaption {
+    display: none;
+}
+/*when i put hover on div the figcaption will be showup*/
+.divs:hover figcaption {
+    display: block;
+}
+
+
+h2:hover::after{
+    animation-name: lineanime; /*add some animation which we created*/
+    animation-duration: 2s;
+
+}
+h2::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    bottom: 0;
+    background-color: #000;
+    left: 0;
+    
+}
+
+/*Key frame for animation*/
+@keyframes lineanime{
+    0%{ /*initial stage*/
+        width: 0;
+        left: 0;
+    
+    }
+    50%{ /*stage when it reaches 50%*/
+        width: 100%;
+        left: 0;
+    }
+    100%{ /*final stage*/
+        width: 0%;
+        left: 100%;
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #Nav_bar {
+        
+        flex-direction: column; /* shows items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    a.a {
+        margin: 5px 0; /* Adjust margin */
+    }
+    #Nav_bar i {
+        margin-bottom: 20px; /* margin from right */
+    }
+    .divs:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    h2{
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    
+    h2:hover::after{
+        animation-name: lineanime;
+        animation-duration: 2s;
+    
+    }
+    h2::after {
+       bottom: -10px; 
+    }
+    @keyframes lineanime{
+        0%{
+            width: 0;
+            left: 0;
+            
+        
+        }
+        50%{
+            width: 100%;
+            left: 0;
+            
+        }
+        100%{
+            width: 0%;
+            left: 100%;
+            
+        }
+    }
+    a.a:hover{
+   
+        background-color: gray;
+        border-radius: 8px;
+        font-size: 2.5rem;
+        
+    }
+     /* Change color of dropdown links on hover */
+     .dropdown-content a:hover {
+        background-color: white;
+        }
+        
+        /* Show the dropdown menu on hover */
+        #Blog:hover .dropdown-content {
+        display: block;
+        }
+        
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        .divs figcaption {
+            display: none;
+            font-size: small;
+        }
+        /*when i put hover on div the figcaption will be showup*/
+        .divs:hover figcaption {
+            display: block;
+        }
+        #div1{
+            background-image:url(photos/sunset.jpg);
+            background-size: cover;
+            width: 200px;
+        }
+        #div2{
+            background-image:url(photos/Northern\ Lights.jpg);
+            background-size: cover;
+            width: 200px;
+        }
+        #div3{
+            background-image:url(photos/Reinebringen\,\ Lofoten\ Islands.jpg);
+            background-size: cover;
+            width: 200px;
+        }
+        #div4{
+            background-image:url(photos/hauklandBeach.jpg);
+            background-size: cover;
+            width: 200px;
+        }
+        #div5{
+            background-image:url(photos/stadium.jpg);
+            background-size: cover;
+            width: 200px;
+        }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 300px){
+    #Nav_bar i {
+       font-size: 1rem; /* margin from right */
+    }
+    h2{
+        font-size: 10px;
+        font-weight: 200;
+    }
+    a.a:hover{
+   
+        background-color: gray;
+        border-radius: 8px;
+        font-size: 2.5rem;
+        
+    }
+    /* Dropdown container */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: white;
+    }
+    
+    /* Show the dropdown menu on hover */
+    #Blog:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .divs figcaption {
+        display: none;
+    }
+    /*when i put hover on div the figcaption will be showup*/
+    .divs:hover figcaption {
+        display: block;
+    }
+
+        
+}
+@media (max-width: 2560px){
+    /* Add your responsive styles here */
+
+    /* For example, you might want to change the font size of your headings */
+    h2 {
+        font-size: 2em;
+    }
+
+    /* Or change the display of your figcaptions */
+    figcaption {
+        display: block;
+    }
+
+    /* Or change the layout of your divs */
+    .divs {
+        width: 100%;
+    }
+}
+
+
